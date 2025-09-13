@@ -11,7 +11,7 @@ namespace Tyuiu.NazarovAA.Sprint2.Task1.V27.Test
             DataService ds = new DataService();
             bool[] res = ds.GetLogicOperations(654, 325, 154, 333);
             bool[] wait = { false, false, true, false, true, false };
-            CollectionAssert.AreEqual(res, wait);
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }
